@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FF Proxy Portal</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #0b0f19;
+            color: #ffffff;
+            padding: 10px;
+        }
+        .container {
+            max-width: 480px;
+            margin: 0 auto;
+            background: #111827;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+            overflow: hidden;
+            border: 1px solid #1f2937;
+        }
+        /* Header */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            background: #1f2937;
+            border-bottom: 1px solid #374151;
+        }
+        .logo-text {
+            font-size: 16px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            color: #f3f4f6;
+        }
+        .live-badge {
+            background: rgba(16, 185, 129, 0.2);
+            color: #34d399;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            border: 1px solid #059669;
+        }
+        /* Step Section */
+        .step-title {
+            padding: 15px 15px 5px 15px;
+            font-size: 13px;
+            color: #9ca3af;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        /* Video Player Container */
+        .video-container {
+            position: relative;
+            width: 100%;
+            background: #000;
+            aspect-ratio: 16/9;
+        }
+        .video-container video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border: none;
+        }
+        /* Instructions & Stats */
+        .info-section {
+            padding: 15px;
+            text-align: center;
+        }
+        .info-section h2 {
+            font-size: 18px;
+            margin-bottom: 8px;
+            color: #f9fafb;
+        }
+        .info-section p {
+            font-size: 13px;
+            color: #9ca3af;
+            margin-bottom: 12px;
+        }
+        .install-count {
+            color: #60a5fa;
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        /* Install Button */
+        .install-btn {
+            display: block;
+            width: 100%;
+            padding: 16px;
+            background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 30px;
+            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
+            transition: 0.3s ease;
+        }
+        .install-btn:active {
+            transform: scale(0.98);
+        }
+        /* Step 02 Card */
+        .app-card {
+            margin: 15px;
+            background: #1f2937;
+            padding: 12px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            border: 1px solid #374151;
+        }
+        .app-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(45deg, #f59e0b, #ef4444);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 20px;
+            margin-right: 12px;
+        }
+        .app-details h4 {
+            font-size: 14px;
+            color: #fff;
+            margin-bottom: 3px;
+        }
+        .app-details p {
+            font-size: 11px;
+            color: #9ca3af;
+        }
+        .rating {
+            color: #fbbf24;
+            font-size: 12px;
+            margin-top: 3px;
+        }
+        /* Comments Section */
+        .comments-section {
+            padding: 15px;
+            border-top: 1px solid #1f2937;
+        }
+        .comments-header {
+            font-size: 13px;
+            color: #9ca3af;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .comment-item {
+            num-bottom: 10px;
+            margin-bottom: 10px;
+            font-size: 12px;
+            background: #1f2937;
+            padding: 8px 12px;
+            border-radius: 6px;
+        }
+        .comment-user {
+            font-weight: bold;
+            color: #60a5fa;
+            margin-bottom: 2px;
+        }
+        .comment-text {
+            color: #d1d5db;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <div class="logo-text">⚡ FF PROXY PORTAL</div>
+            <div class="live-badge">🟢 1,311 LIVE</div>
+        </div>
+
+        <!-- Step 01: Watch -->
+        <div class="step-title">📍 Step 01 — Watch</div>
+        <div class="video-container">
+            <!-- Yahan controls aur playsinline laga diya hai taaki unmuted chale -->
+            <video controls playsinline>
+                <source src="video.mp4" type="video/mp4">
+                Aapka browser video tag support nahi karta.
+            </video>
+        </div>
+
+        <div class="info-section">
+            <h2>WATCH FULL VIDEO</h2>
+            <p>Complete the video to unlock proxy server access</p>
+            <div class="install-count">🔥 5,685 installs in last hour</div>
+            
+            <!-- Install Now Button with your link -->
+            <a href="https://www.mobilerewards.link/view.php?id=5546832&pub=3361737" class="install-btn">
+                ⬇️ INSTALL NOW
+            </a>
+        </div>
+
+        <!-- Step 02: Install -->
+        <div class="step-title">📍 Step 02 — Install</div>
+        <div class="app-card">
+            <div class="app-icon">FF</div>
+            <div class="app-details">
+                <h4>PROXY SERVER</h4>
+                <p>Free Fire Proxy • Unlimited Access • Anti-Ban</p>
+                <div class="rating">⭐⭐⭐⭐⭐ 4.9</div>
+            </div>
+        </div>
+
+        <!-- Live Comments -->
+        <div class="comments-section">
+            <div class="comments-header">
+                <span>Live Comments</span>
+                <span>1,454 watching</span>
+            </div>
+            <div class="comment-item">
+                <div class="comment-user">Ajay2002 <span style="font-weight:normal; color:#6b7280; font-size:10px;">1s ago</span></div>
+                <div class="comment-text">2 min me working hai >> fastlegend 🔥</div>
+            </div>
+            <div class="comment-item">
+                <div class="comment-user">Manish1991 <span style="font-weight:normal; color:#6b7280; font-size:10px;">just now</span></div>
+                <div class="comment-text">arey - free me ff proxy mil gaya</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
